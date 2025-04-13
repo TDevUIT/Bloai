@@ -43,7 +43,7 @@ export default async function RootLayout({
   const session = await auth();
   return (
     <SessionProvider session={session}>
-      <html lang="vi" className={`${GeistSans.variable} antialiased scroll-custom`} suppressHydrationWarning>
+      <html lang="vi" className={`${inter.className} antialiased scroll-custom`} suppressHydrationWarning>
         <body className="bg-gray-50" suppressHydrationWarning>
           <TRPCReactProvider>
             <main>
