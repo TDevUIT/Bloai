@@ -6,7 +6,6 @@ import {
     aiGenerateOpenGraphTitle,
     aiGenerateOpenGraphDescription,
     aiGenerateTitleBlog,
-    aiSummaryContent,
     aiGenerateExcerpt,
   } from '@/lib/gemini'
   
@@ -37,11 +36,6 @@ import {
 
 export async function generateTitleBlog(content: string) {
     const generated = await aiGenerateTitleBlog(content)
-    return generated
-}
-
-export async function generateSummaryContent(content: string) {
-    const generated = await aiSummaryContent(content)
     return generated
 }
 

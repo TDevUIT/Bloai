@@ -1,14 +1,22 @@
-import { BlogGrid } from "@/components/BlogGrid";
+import { BlogGrid } from "@/components/blog/BlogGrid";
+import { blogPageMetadata, blogSchema, safeJsonLdStringify } from "@/config/seo";
 
+export const metadata = blogPageMetadata
 
-export default async function Home() {
- 
+export default async function Page() {
   return (
-    <main>
-      <div className="px-4 min-[375px]:px-6 md:px-8 lg:px-10 xl:px-12 py-4 min-[375px]:py-6 min-h-screen">
-        <h2 className="text-2xl font-bold mb-4">Nổi bật</h2>
-        <BlogGrid expanded={true} />
-      </div>
-    </main>
+    <>
+     <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: safeJsonLdStringify(blogSchema) }}
+      />
+      <main className="min-h-screen">
+        <div className="">
+            <BlogGrid
+            />
+        </div>
+      </main>
+    </>
+
   );
 }

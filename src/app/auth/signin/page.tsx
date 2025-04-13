@@ -9,12 +9,7 @@ import { Mail,LockKeyhole  } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { Checkbox } from '@/components/ui/checkbox';
 import Link from 'next/link';
-import { auth } from '@/server/auth';
-import { env } from '@/env';
-import { AUTH_ROUTES, DEFAULT_SIGNIN_REDIRECT } from '@/lib/route';
 const SignInPage = () => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
   const [email, setEmail] = useState('');
   const callbackUrl = '/'
   const [password, setPassword] = useState('');
@@ -89,7 +84,7 @@ const SignInPage = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-none bg-[#e8e8e8] placeholder-gray-400"
+              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-hidden bg-[#e8e8e8] placeholder-gray-400"
               placeholder="you@example.com"
               required
             />
@@ -106,7 +101,7 @@ const SignInPage = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-none bg-[#e8e8e8] placeholder-gray-400"
+              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-hidden bg-[#e8e8e8] placeholder-gray-400"
               placeholder="••••••••"
               required
               minLength={6}
@@ -130,7 +125,7 @@ const SignInPage = () => {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           type="submit"
-          className="w-full bg-gradient-to-br from-purple-600 to-blue-500 text-white
+          className="w-full bg-linear-to-br from-purple-600 to-blue-500 text-white
                     py-3 px-6 rounded-lg hover:shadow-lg transition-all font-medium
                     focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >

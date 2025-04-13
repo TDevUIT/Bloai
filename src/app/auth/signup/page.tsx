@@ -97,7 +97,7 @@ const SignUpPage = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-none bg-[#e8e8e8] placeholder-gray-400"
+              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-hidden bg-[#e8e8e8] placeholder-gray-400"
               placeholder="Tên của bạn"
               required
             />
@@ -114,7 +114,7 @@ const SignUpPage = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-none bg-[#e8e8e8] placeholder-gray-400"
+              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-hidden bg-[#e8e8e8] placeholder-gray-400"
               placeholder="you@example.com"
               required
             />
@@ -131,7 +131,7 @@ const SignUpPage = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-none bg-[#e8e8e8] placeholder-gray-400"
+              className="input ml-3 border-none rounded-lg w-full h-full focus:outline-hidden bg-[#e8e8e8] placeholder-gray-400"
               placeholder="••••••••"
               required
               minLength={6}
@@ -155,7 +155,7 @@ const SignUpPage = () => {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           type="submit"
-          className="w-full bg-gradient-to-br from-purple-600 to-blue-500 text-white
+          className="w-full bg-linear-to-br from-purple-600 to-blue-500 text-white
                     py-3 px-6 rounded-lg hover:shadow-lg transition-all font-medium
                     focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >

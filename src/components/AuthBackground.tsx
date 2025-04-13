@@ -41,13 +41,13 @@ export function AuthBackground() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <Card className="bg-background/80 backdrop-blur-md border-border/20 shadow-lg overflow-hidden relative max-w-md w-full">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/30" />
+          <div className="absolute inset-0 bg-linear-to-b from-transparent to-background/30" />
           
           <CardContent className="flex flex-col gap-6 p-8 items-center text-center">
             <div className="flex flex-col items-center gap-4">
               <Rocket className="h-12 w-12 text-primary animate-pulse ml-6" />
               <div className="space-y-4">
-                <CardTitle className="text-3xl font-bold bg-gradient-to-r from-primary to-cyan-500 bg-clip-text text-neutral-500">
+                <CardTitle className="text-3xl font-bold bg-linear-to-r from-primary to-cyan-500 bg-clip-text text-neutral-500">
                   Bloai
                 </CardTitle>
                 <div className="h-12 flex items-center justify-center">
@@ -58,7 +58,7 @@ export function AuthBackground() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
-                      className="text-lg font-medium bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent"
+                      className="text-lg font-medium bg-linear-to-r from-foreground to-muted-foreground bg-clip-text text-transparent"
                     >
                       {AI_TAGLINES[currentTagline]}
                     </motion.div>

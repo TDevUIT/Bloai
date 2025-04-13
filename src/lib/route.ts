@@ -9,7 +9,14 @@ export const AUTH_ROUTES = [
 
 export const PUBLIC_ROUTES = [
   "/",
-  "/blog" 
+  "/blog",
+  "/tags",
+  "/about",
+  "/landing",
+  "/contact",
+  "/sitemap.xml",
+  "/robots.txt",
+  "/favicon.ico",
 ];
 
 // For protected routes configuration
