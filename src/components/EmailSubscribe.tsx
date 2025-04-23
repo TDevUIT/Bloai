@@ -14,8 +14,8 @@ interface EmailSubscribeSectionProps {
 }
 
 const EmailSubscribeSection = ({
-  title = "Nhận thông tin cập nhật mới nhất",
-  description = "Đăng ký để nhận bài viết mới, tin tức và cập nhật từ chúng tôi.",
+  title = "Khám Phá Thế Giới AI Cùng Bloai",
+  description = "Trở thành một phần của cộng đồng đam mê AI tại Bloai! Đăng ký nhận bản tin hàng tuần để cập nhật những thông tin giá trị về trí tuệ nhân tạo.",
   className = "",
 }: EmailSubscribeSectionProps) => {
   const [email, setEmail] = useState<string>('');

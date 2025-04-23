@@ -32,68 +32,68 @@ interface Testimonial extends TestimonialContent {
 const TestimonialSection = () => {
   const testimonialContentTemplates: TestimonialContent[] = [
     {
-      quote: "BloAI giúp mình học machine learning dễ hiểu hơn với các bài viết giải thích trực quan. Đặc biệt thích series về neural network cơ bản, rất phù hợp cho sinh viên như mình!",
+      quote: "Bloai giúp mình học machine learning dễ hiểu hơn với các bài viết giải thích trực quan. Đặc biệt thích series về neural network cơ bản, rất phù hợp cho sinh viên như mình!",
       role: "Sinh viên AI tại UIT",
       platform: "facebook",
       date: "15/05/2024",
       rating: 5
     },
     {
-      quote: "Là người mới bắt đầu với deep learning, mình đánh giá cao cách BloAI trình bày các khái niệm phức tạp một cách đơn giản. Bài về CNN và ứng dụng trong computer vision rất hữu ích!",
+      quote: "Là người mới bắt đầu với deep learning, mình đánh giá cao cách Bloai trình bày các khái niệm phức tạp một cách đơn giản. Bài về CNN và ứng dụng trong computer vision rất hữu ích!",
       role: "Sinh viên năm 3 ngành AI",
       platform: "twitter",
       date: "22/05/2024",
       rating: 4
     },
     {
-      quote: "Mình tìm thấy BloAI khi đang làm đồ án về NLP. Các hướng dẫn xử lý ngôn ngữ tự nhiên bằng Python và thư viện Transformers đã giúp mình hoàn thành project đúng hạn!",
+      quote: "Mình tìm thấy Bloai khi đang làm đồ án về NLP. Các hướng dẫn xử lý ngôn ngữ tự nhiên bằng Python và thư viện Transformers đã giúp mình hoàn thành project đúng hạn!",
       role: "Sinh viên Đại học Bách Khoa",
       platform: "linkedin",
       date: "01/06/2024",
       rating: 5
     },
     {
-      quote: "Dù mới ra mắt nhưng BloAI đã có nhiều bài viết chất lượng về AI/ML. Mình thường xuyên chia sẻ blog này cho nhóm học tập vì nội dung phù hợp với chương trình học.",
+      quote: "Dù mới ra mắt nhưng Bloai đã có nhiều bài viết chất lượng về AI/ML. Mình thường xuyên chia sẻ blog này cho nhóm học tập vì nội dung phù hợp với chương trình học.",
       role: "Lớp trưởng lớp AI",
       platform: "facebook",
       date: "10/06/2024",
       rating: 4
     },
         {
-          "quote": "Bài hướng dẫn xây dựng AI Assistant từ Notion của BloAI rất chi tiết và thực tế. Áp dụng kiến trúc RAG theo hướng dẫn đã giúp tôi quản lý tài nguyên cá nhân hiệu quả hơn 🚀",
+          "quote": "Bài hướng dẫn xây dựng AI Assistant từ Notion của Bloai rất chi tiết và thực tế. Áp dụng kiến trúc RAG theo hướng dẫn đã giúp tôi quản lý tài nguyên cá nhân hiệu quả hơn 🚀",
           "role": "Kỹ sư Dữ liệu & AI",
           "platform": "linkedin",
           "date": "20/03/2025",
           "rating": 5
         },
         {
-          "quote": "Chiến lược Prompt Kép của BloAI là 'game changer' cho công việc marketing của tôi. Nội dung tạo ra giờ thu hút và tăng tương tác hơn hẳn! Cảm ơn team BloAI!",
+          "quote": "Chiến lược Prompt Kép của Bloai là 'game changer' cho công việc marketing của tôi. Nội dung tạo ra giờ thu hút và tăng tương tác hơn hẳn! Cảm ơn team Bloai!",
           "role": "Content Marketer",
           "platform": "facebook",
           "date": "18/03/2025"
         },
         {
-          "quote": "Tìm thấy lộ trình 10 bước để trở thành lập trình viên chuyên nghiệp trên BloAI thật đúng lúc. Hướng dẫn rất rõ ràng và truyền cảm hứng cho mình tiếp tục cố gắng 💪",
+          "quote": "Tìm thấy lộ trình 10 bước để trở thành lập trình viên chuyên nghiệp trên Bloai thật đúng lúc. Hướng dẫn rất rõ ràng và truyền cảm hứng cho mình tiếp tục cố gắng 💪",
           "role": "Sinh viên CNTT",
           "platform": "twitter",
           "date": "25/03/2025"
         },
         {
-          "quote": "Bài review top công cụ AI viết content của BloAI giúp tôi chọn được công cụ phù hợp nhất, tiết kiệm hàng giờ làm việc mỗi tuần. Chất lượng nội dung cũng cải thiện đáng kể.",
+          "quote": "Bài review top công cụ AI viết content của Bloai giúp tôi chọn được công cụ phù hợp nhất, tiết kiệm hàng giờ làm việc mỗi tuần. Chất lượng nội dung cũng cải thiện đáng kể.",
           "role": "Freelancer Content Writer",
           "platform": "facebook",
           "date": "01/04/2025",
           "rating": 4
         },
         {
-          "quote": "Hướng dẫn dùng Midjourney không cần Discord trên BloAI quá đỉnh! Từ giờ việc tạo ảnh AI trở nên đơn giản hơn bao giờ hết. Cực kỳ chi tiết và dễ làm theo.",
+          "quote": "Hướng dẫn dùng Midjourney không cần Discord trên Bloai quá đỉnh! Từ giờ việc tạo ảnh AI trở nên đơn giản hơn bao giờ hết. Cực kỳ chi tiết và dễ làm theo.",
           "role": "Thiết kế Đồ họa",
           "platform": "twitter",
           "date": "05/04/2025"
         },
         {
-          "quote": "BloAI là blog tiếng Việt hiếm hoi cập nhật các chủ đề nóng về AI như RAG, Prompt Engineering, và các công cụ mới nhất với kiến thức chuyên sâu nhưng dễ hiểu.",
-          "role": "Độc giả thường xuyên của BloAI",
+          "quote": "Bloai là blog tiếng Việt hiếm hoi cập nhật các chủ đề nóng về AI như RAG, Prompt Engineering, và các công cụ mới nhất với kiến thức chuyên sâu nhưng dễ hiểu.",
+          "role": "Độc giả thường xuyên của Bloai",
           "platform": "linkedin",
           "date": "10/04/2025",
           "rating": 5
@@ -155,9 +155,9 @@ const TestimonialSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#2B463C] mb-4">Sinh viên AI nói gì về BloAI?</h2>
+          <h2 className="text-3xl font-bold text-[#2B463C] mb-4">Người dùng nói gì về Bloai?</h2>
           <p className="text-lg text-[#554640]/80 max-w-2xl mx-auto">
-            Phản hồi từ cộng đồng sinh viên công nghệ và trí tuệ nhân tạo
+            Phản hồi từ cộng đồng người dùng yêu thích công nghệ và trí tuệ nhân tạo
           </p>
         </div>
 
@@ -195,7 +195,7 @@ const TestimonialSection = () => {
 
         <div className="text-center mt-8 text-sm text-[#554640]/60">
           <p>
-            BloAI - Nền tảng chia sẻ kiến thức AI/ML cho sinh viên, cập nhật xu hướng công nghệ mới nhất.
+            Bloai - Nền tảng chia sẻ kiến thức AI/ML, cập nhật xu hướng công nghệ mới nhất.
           </p>
         </div>
       </div>

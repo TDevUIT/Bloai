@@ -159,8 +159,8 @@ export default async function Home() {
 
         <section className="w-full bg-gray-50 dark:bg-gray-800 py-12">
           <EmailSubscribeSection 
-            title="Đừng bỏ lỡ kiến thức AI mới nhất"
-            description="Đăng ký nhận bản tin để cập nhật các bài viết mới, thủ thuật AI và tin tức công nghệ mỗi tuần."
+            title="Khám Phá Thế Giới AI Cùng Bloai"
+            description="Trở thành một phần của cộng đồng đam mê AI tại Bloai! Đăng ký nhận bản tin hàng tuần để cập nhật những thông tin giá trị về trí tuệ nhân tạo."
           />
         </section>
 

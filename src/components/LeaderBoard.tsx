@@ -61,7 +61,7 @@ const LeaderBoard = async () => {
         <Card className="w-full border border-slate-200 shadow-sm rounded-lg sm:rounded-xl overflow-hidden">
           <CardHeader className="border-b border-slate-100 bg-gradient-to-r from-slate-50 to-slate-100 p-4 sm:p-6">
             <CardTitle className="text-xl sm:text-2xl flex items-center gap-3 text-slate-800">
-              <span>Bảng xếp hạng Blog</span>
+              <span>Bảng xếp hạng</span>
             </CardTitle>
           </CardHeader>
           
