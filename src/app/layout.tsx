@@ -11,6 +11,7 @@ import { Inter } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Loading from "@/components/loading";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -137,6 +138,12 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html lang="vi" className={`${inter.className} antialiased scroll-custom`} suppressHydrationWarning>
         <head>
+          <Script 
+            async 
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1872574461230356"
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          ></Script>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema).replace(/</g, '\\u003c') }}
