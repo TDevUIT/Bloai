@@ -2,7 +2,7 @@
 
 import { useCurrentUser } from '@/hook/use-current-user';
 import Link from 'next/link';
-import { FaSearch, FaUser, FaSignOutAlt, FaPenAlt, FaHome, FaBars, FaTimes } from 'react-icons/fa';
+import { FaUser, FaSignOutAlt, FaPenAlt, FaHome, FaBars, FaTimes } from 'react-icons/fa';
 import { signOut } from 'next-auth/react';
 import { useState, useEffect, useRef } from 'react';
 import { useIsMobile } from '@/hook/use-mobile';
@@ -43,11 +43,11 @@ const Navbar = () => {
         className={cn(
           "h-14 min-[375px]:h-16 bg-white border-b border-black/10 flex items-center justify-between",
           "px-2 min-[375px]:px-4 md:px-6 lg:px-8 shadow-sm",
-          "fixed top-0 left-0 w-full z-30" 
+          "fixed top-0 left-0 w-full z-30 " 
         )}
         aria-label="Main navigation"
       >
-        <div className="flex items-center flex-shrink-0 md:max-w-6xl md:w-full">
+        <div className="flex items-center lg:flex-shrink-0 lg:max-w-6xl lg:w-full">
           <Logo />
           {!isMobile && (
             <div className="hidden md:flex items-center ml-8 space-x-6">
@@ -81,11 +81,11 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-           {!isMobile && (
-          <div className="flex-1 max-w-2xl mx-4 ">
-            <Search />
-          </div>
-        )}
+            {!isMobile && (
+            <div className="flex-1 mx-4 ">
+              <Search />
+            </div>
+          )}
         </div>
        
         <div className="flex items-center justify-end gap-2 min-[375px]:gap-4 flex-shrink-0">
