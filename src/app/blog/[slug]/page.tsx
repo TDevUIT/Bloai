@@ -5,7 +5,7 @@ import BlogPostClientWrapper from './components/BlogPostClientWrapper';
 import { Blog, SuggestedBlog } from '@/types/helper.type';
 import { unstable_cache } from 'next/cache';
 
-export const revalidate = 300;
+export const revalidate = 86400;
 
 type Props = {
     params: Promise<{ slug: string }>

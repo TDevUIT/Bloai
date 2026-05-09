@@ -4,6 +4,7 @@ import { TRPCError } from "@trpc/server";
 import { Prisma } from "@prisma/client";
 import { Resend } from "resend";
 import { sendBlogNotifications, sendConfirmationEmail } from "@/lib/notifySubscribers";
+import { revalidateTag } from "next/cache";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -190,6 +191,8 @@ export const blogRouter = createTRPCRouter({
           });
         }
 
+        revalidateTag("blog");
+
         return { success: true, result };
       } catch (err) {
         console.error(err);
@@ -288,6 +291,8 @@ export const blogRouter = createTRPCRouter({
           timeout: 10000,
         });
 
+        revalidateTag("blog");
+
         return { success: true, result };
       } catch (err) {
         console.error(err);
@@ -303,11 +308,31 @@ export const blogRouter = createTRPCRouter({
             try {
             const blog = await ctx.db.blog.findUnique({
                 where: { slug: input.slug },
-                include: {
-                  tags: true,
-                  author: true,
+                select: {
+                  id: true,
+                  title: true,
+                  slug: true,
+                  content: true,
+                  imageUrl: true,
+                  imageAlt: true,
+                  publishDate: true,
+                  updatedAt: true,
+                  readTime: true,
+                  canonicalUrl: true,
+                  metaDescription: true,
+                  ogTitle: true,
+                  ogDescription: true,
+                  ogImageUrl: true,
+                  authorId: true,
+                  tags: { select: { id: true, name: true } },
+                  author: { select: { id: true, name: true, image: true } },
                   comments: {
-                    include: { author: true },
+                    select: {
+                      id: true,
+                      content: true,
+                      createdAt: true,
+                      author: { select: { id: true, name: true, image: true } }
+                    },
                     orderBy: { createdAt: 'desc' },
                   },
                 },
@@ -760,6 +785,9 @@ export const blogRouter = createTRPCRouter({
         author: true,
       },
     })
+    
+    revalidateTag("blog");
+    
     return comment
   }),
   listBySlug: publicProcedure
